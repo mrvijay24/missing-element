@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+ int n,sum=0,total,i;
+ printf("enter the number of elements:\n");
+ scanf("%d",&n);
+ total=(n*(n+1))/2;
+ int arr[n-1];
+ printf("enter the array elements:\n");
+ for(i=0;i<n-1;i++)
+ {
+ 	scanf("%d",&arr[i]);
+ 	sum=sum+arr[i];
+ }
+ printf("missing element is %d",total-sum);
+}
